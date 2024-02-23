@@ -5,11 +5,10 @@ html {
   max-height: auto;
 }
 body {
-  border: 2px solid #000000;
   background-color: #f7f5eb;
   max-width: 428px;
   height: fit-content;
-  margin: 30px auto;
+  margin: 8px auto;
   border-radius: 8px;
   font-family: "Rakkas", serif;
   font-weight: 400;
@@ -56,26 +55,27 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 220px;
+  height: 150px;
 }
 #computerDisplay {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 220px;
+  height: 150px;
 }
 #headerOpt {
-  margin: 50px 120px 5px;
+  margin: 20px 120px 5px;
 }
 #optItems {
   display: flex;
   justify-content: space-evenly;
 }
 #footer p {
-  margin: 40px auto 10px;
+  margin: 30px auto 10px;
   font-size: small;
 }
+
 img#button {
   padding: 10px;
   /* color: #e8d8c4;
@@ -91,19 +91,18 @@ img#button:hover {
 
 #modeButton {
   font-size: medium;
-  width: 140px;
-  padding: 0.6em 2em;
+  padding: 0.5em 1.5em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #e8d8c4;
+  background: #111;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 10px;
 }
 
-#modeButton:hover:before {
+#modeButton:before {
   content: "";
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -115,10 +114,9 @@ img#button:hover {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowingbn5 20s linear infinite;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
-  -webkit-animation: glowingbn5 20s linear infinite;
 }
 
 @keyframes glowingbn5 {
@@ -139,6 +137,10 @@ img#button:hover {
 
 #modeButton:active:after {
   background: transparent;
+}
+
+#modeButton:hover:before {
+  opacity: 1;
 }
 
 #modeButton:after {
