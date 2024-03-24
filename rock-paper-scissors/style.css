@@ -71,10 +71,6 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-#footer p {
-  margin: 30px auto 10px;
-  font-size: small;
-}
 
 img#button {
   padding: 10px;
